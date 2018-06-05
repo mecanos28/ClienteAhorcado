@@ -15,32 +15,32 @@ namespace ClienteAhorcado.ECCI_Ahorcado {
     [System.ServiceModel.ServiceContractAttribute(Namespace="urn:ECCI_Ahorcado", ConfigurationName="ECCI_Ahorcado.ECCI_AhorcadoPort")]
     public interface ECCI_AhorcadoPort {
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="urn:ECCI_Ahorcado#Ahorcado#setUp")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:ECCI_Ahorcado#Ahorcado#setUp", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         void setUp();
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="urn:ECCI_Ahorcado#Ahorcado#setUp")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:ECCI_Ahorcado#Ahorcado#setUp", ReplyAction="*")]
         System.Threading.Tasks.Task setUpAsync();
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="urn:ECCI_Ahorcado#Ahorcado#setNombre")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:ECCI_Ahorcado#Ahorcado#setNombre", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         void setNombre(string nombre);
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="urn:ECCI_Ahorcado#Ahorcado#setNombre")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:ECCI_Ahorcado#Ahorcado#setNombre", ReplyAction="*")]
         System.Threading.Tasks.Task setNombreAsync(string nombre);
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="urn:ECCI_Ahorcado#Ahorcado#intentarLetra")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:ECCI_Ahorcado#Ahorcado#intentarLetra", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         void intentarLetra(string letra);
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="urn:ECCI_Ahorcado#Ahorcado#intentarLetra")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:ECCI_Ahorcado#Ahorcado#intentarLetra", ReplyAction="*")]
         System.Threading.Tasks.Task intentarLetraAsync(string letra);
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="urn:ECCI_Ahorcado#Ahorcado#terminarJuego")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:ECCI_Ahorcado#Ahorcado#terminarJuego", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         void terminarJuego();
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="urn:ECCI_Ahorcado#Ahorcado#terminarJuego")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:ECCI_Ahorcado#Ahorcado#terminarJuego", ReplyAction="*")]
         System.Threading.Tasks.Task terminarJuegoAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:ECCI_Ahorcado#Ahorcado#getIntentos", ReplyAction="*")]

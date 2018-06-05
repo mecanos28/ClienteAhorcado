@@ -4,13 +4,17 @@
     <xsd:schema targetNamespace="urn:ECCI_Ahorcado" />
   </wsdl:types>
   <wsdl:message name="setUpIn" />
+  <wsdl:message name="setUpOut" />
   <wsdl:message name="setNombreIn">
     <wsdl:part name="nombre" type="xsd:string" />
   </wsdl:message>
+  <wsdl:message name="setNombreOut" />
   <wsdl:message name="intentarLetraIn">
     <wsdl:part name="letra" type="xsd:string" />
   </wsdl:message>
+  <wsdl:message name="intentarLetraOut" />
   <wsdl:message name="terminarJuegoIn" />
+  <wsdl:message name="terminarJuegoOut" />
   <wsdl:message name="getIntentosIn" />
   <wsdl:message name="getIntentosOut">
     <wsdl:part name="return" type="xsd:string" />
@@ -31,18 +35,22 @@
     <wsdl:operation name="setUp">
       <documentation>Ahorcado::setUp() Instancia las variables para un nuevo juego</documentation>
       <wsdl:input message="tns:setUpIn" />
+      <wsdl:output message="tns:setUpOut" />
     </wsdl:operation>
     <wsdl:operation name="setNombre">
       <documentation>Ahorcado::setNombre() Instancia la variable de nombre para un nuevo juego</documentation>
       <wsdl:input message="tns:setNombreIn" />
+      <wsdl:output message="tns:setNombreOut" />
     </wsdl:operation>
     <wsdl:operation name="intentarLetra">
       <documentation>Ahorcado::intentarLetra() Prueba una letra que el usuario digite en el juego</documentation>
       <wsdl:input message="tns:intentarLetraIn" />
+      <wsdl:output message="tns:intentarLetraOut" />
     </wsdl:operation>
     <wsdl:operation name="terminarJuego">
       <documentation>Ahorcado::terminarJuego() Termina el juego y reinstancia las variables</documentation>
       <wsdl:input message="tns:terminarJuegoIn" />
+      <wsdl:output message="tns:terminarJuegoOut" />
     </wsdl:operation>
     <wsdl:operation name="getIntentos">
       <documentation>Ahorcado::getIntentos() Devuelve la cantidad de intentos que le queda al usuario</documentation>
@@ -72,24 +80,36 @@
       <wsdl:input>
         <soap:body use="encoded" namespace="urn:ECCI_Ahorcado" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
       </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:ECCI_Ahorcado" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="setNombre">
       <soap:operation soapAction="urn:ECCI_Ahorcado#Ahorcado#setNombre" />
       <wsdl:input>
         <soap:body use="encoded" namespace="urn:ECCI_Ahorcado" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
       </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:ECCI_Ahorcado" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="intentarLetra">
       <soap:operation soapAction="urn:ECCI_Ahorcado#Ahorcado#intentarLetra" />
       <wsdl:input>
         <soap:body use="encoded" namespace="urn:ECCI_Ahorcado" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
       </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:ECCI_Ahorcado" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="terminarJuego">
       <soap:operation soapAction="urn:ECCI_Ahorcado#Ahorcado#terminarJuego" />
       <wsdl:input>
         <soap:body use="encoded" namespace="urn:ECCI_Ahorcado" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
       </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:ECCI_Ahorcado" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getIntentos">
       <soap:operation soapAction="urn:ECCI_Ahorcado#Ahorcado#getIntentos" />
