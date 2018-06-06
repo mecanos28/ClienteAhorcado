@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace ClienteAhorcado
 {
-    public partial class Form3 : Form
+    public partial class Marcador : Form
     {
-        public Form3()
+        public Marcador()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void Form3_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

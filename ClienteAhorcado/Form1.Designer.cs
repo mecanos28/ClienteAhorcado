@@ -394,6 +394,7 @@
             this.mejoresPuntuaciones.TabIndex = 51;
             this.mejoresPuntuaciones.TabStop = true;
             this.mejoresPuntuaciones.Text = "Ver mejores puntuaciones";
+            this.mejoresPuntuaciones.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.mejoresPuntuaciones_LinkClicked);
             // 
             // label1
             // 

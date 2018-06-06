@@ -60,6 +60,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form3";
             this.Text = "Perdió";
+            this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
