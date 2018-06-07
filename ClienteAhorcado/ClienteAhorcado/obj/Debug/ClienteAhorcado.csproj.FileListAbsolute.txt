@@ -1,0 +1,12 @@
+C:\Users\b50657\Documents\Web\ClienteAhorcado\ClienteAhorcado\obj\Debug\ClienteAhorcado.csprojResolveAssemblyReference.cache
+C:\Users\b50657\Documents\Web\ClienteAhorcado\ClienteAhorcado\obj\Debug\ClienteAhorcado.Ahorcado.resources
+C:\Users\b50657\Documents\Web\ClienteAhorcado\ClienteAhorcado\obj\Debug\ClienteAhorcado.Form2.resources
+C:\Users\b50657\Documents\Web\ClienteAhorcado\ClienteAhorcado\obj\Debug\ClienteAhorcado.Form3.resources
+C:\Users\b50657\Documents\Web\ClienteAhorcado\ClienteAhorcado\obj\Debug\ClienteAhorcado.Marcador.resources
+C:\Users\b50657\Documents\Web\ClienteAhorcado\ClienteAhorcado\obj\Debug\ClienteAhorcado.Properties.Resources.resources
+C:\Users\b50657\Documents\Web\ClienteAhorcado\ClienteAhorcado\obj\Debug\ClienteAhorcado.csproj.GenerateResource.Cache
+C:\Users\b50657\Documents\Web\ClienteAhorcado\ClienteAhorcado\bin\Debug\ClienteAhorcado.exe.config
+C:\Users\b50657\Documents\Web\ClienteAhorcado\ClienteAhorcado\bin\Debug\ClienteAhorcado.exe
+C:\Users\b50657\Documents\Web\ClienteAhorcado\ClienteAhorcado\bin\Debug\ClienteAhorcado.pdb
+C:\Users\b50657\Documents\Web\ClienteAhorcado\ClienteAhorcado\obj\Debug\ClienteAhorcado.exe
+C:\Users\b50657\Documents\Web\ClienteAhorcado\ClienteAhorcado\obj\Debug\ClienteAhorcado.pdb
