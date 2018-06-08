@@ -38,6 +38,18 @@ namespace ClienteAhorcado
             imagen.Visible = true;
         }
 
+        public void setUp()
+        {
+            ahorcadoService.setNombre(this.nombre);
+            palabraEscondida.Text = ahorcadoService.getPalabraEscondida();
+            letrasUsadas.Text = ahorcadoService.getLetrasUtilizadas();
+            intentosRestantes = Convert.ToInt32(ahorcadoService.getIntentos());
+            imagen.Image = Properties.Resources._6; //cambiar a 6
+            imagen.Refresh();
+            imagen.Visible = true;
+            this.enableButtons();
+        }
+
         public void actualizarJuego()
         {
             palabraEscondida.Text = ahorcadoService.getPalabraEscondida();
@@ -71,11 +83,45 @@ namespace ClienteAhorcado
             if (yaGano)
             {
                 gana();
-            }
+                ahorcadoService.setUp();
+                this.setUp();
+            }  
             if (intentosRestantes == 0 && !yaGano)
             {
                 pierde();
+                ahorcadoService.setUp();
+                this.setUp();
             }
+        }
+
+        private void enableButtons()
+        {
+            buttonA.Enabled = true;
+            buttonB.Enabled = true;
+            buttonC.Enabled = true;
+            buttonD.Enabled = true;
+            buttonE.Enabled = true;
+            buttonF.Enabled = true;
+            buttonG.Enabled = true;
+            buttonH.Enabled = true;
+            buttonI.Enabled = true;
+            buttonJ.Enabled = true;
+            buttonK.Enabled = true;
+            buttonL.Enabled = true;
+            buttonM.Enabled = true;
+            buttonN.Enabled = true;
+            buttonO.Enabled = true;
+            buttonP.Enabled = true;
+            buttonQ.Enabled = true;
+            buttonR.Enabled = true;
+            buttonS.Enabled = true;
+            buttonT.Enabled = true;
+            buttonU.Enabled = true;
+            buttonV.Enabled = true;
+            buttonW.Enabled = true;
+            buttonX.Enabled = true;
+            buttonY.Enabled = true;
+            buttonZ.Enabled = true;
         }
 
         private void gana()

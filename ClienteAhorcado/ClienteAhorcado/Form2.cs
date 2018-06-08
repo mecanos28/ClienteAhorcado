@@ -19,7 +19,7 @@ namespace ClienteAhorcado
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void Form2_Load(object sender, EventArgs e)
