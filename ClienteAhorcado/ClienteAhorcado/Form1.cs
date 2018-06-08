@@ -122,6 +122,7 @@ namespace ClienteAhorcado
             buttonX.Enabled = true;
             buttonY.Enabled = true;
             buttonZ.Enabled = true;
+            buttonÑ.Enabled = true;
         }
 
         private void gana()
